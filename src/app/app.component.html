@@ -1,0 +1,12 @@
+<div>
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>{{title}}</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <main [@routerTransition]="getState(o)">
+    <router-outlet #o="outlet"></router-outlet>
+  </main>
+</div>
+
+

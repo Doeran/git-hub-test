@@ -1,0 +1,12 @@
+<div>
+  <mat-list>
+    <mat-list-item *ngFor="let user of gitHubUser" routerLink="/detail/{{user.login}}" class="dashboard__list-item">
+      <img src="{{user.avatar_url}}" class="dashboard__list-item-avatar">
+      <span class="dashboard__list-item-name">{{user.login}}</span>
+    </mat-list-item>
+  </mat-list>
+  <div class="dashboard__buttons-wr">
+    <button mat-raised-button color="primary" (click)="goToNextPage(false)">First</button>
+    <button mat-raised-button color="primary" (click)="goToNextPage(true)">Next</button>
+  </div>
+</div>

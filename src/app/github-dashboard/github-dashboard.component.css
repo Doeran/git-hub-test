@@ -1,0 +1,17 @@
+.dashboard__list-item-avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.dashboard__list-item{
+  cursor: pointer;
+}
+
+.dashboard__list-item-name {
+  color: #0366d6;
+  margin-left: 30px;
+}
+
+.dashboard__buttons-wr{
+  margin-left: 15px;
+}

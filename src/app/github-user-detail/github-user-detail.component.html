@@ -1,0 +1,30 @@
+<div class="user-detail">
+  <div class="user-detail__content">
+    <img src="{{userDetail?.avatar_url}}">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>User name: {{userDetail?.name}}</span>
+      </mat-toolbar-row>
+
+      <mat-toolbar-row>
+        <span>User login: {{userDetail?.login}}</span>
+      </mat-toolbar-row>
+
+      <mat-toolbar-row>
+        <span>User email: {{userDetail?.email}}</span>
+      </mat-toolbar-row>
+
+    </mat-toolbar>
+  </div>
+  <mat-list>
+    <mat-list-item *ngFor="let repo of userRepos" [routerLink]="['/repo-detail', {fullname: repo.full_name}]"
+                   (click)="saveRepo(repo)"
+                   class="user-detail__list-item">
+      Repo name:
+      <h3>
+        <span class="user-detail__list-item-title">
+          <span class="user-detail__list-item-title_normal">{{userDetail?.login}}</span> / {{repo.name}}</span>
+      </h3>
+    </mat-list-item>
+  </mat-list>
+</div>

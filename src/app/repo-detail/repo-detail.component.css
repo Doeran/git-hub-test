@@ -1,0 +1,14 @@
+.repo-detail__button {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.repo-detail__text{
+  color: #0366d6;
+  margin-left: 15px;
+}
+
+.repo-detail__text_normal {
+  font-weight: 400;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.user-detail{
+  margin-top: 5px;
+}
+
+.user-detail__list-item:hover {
+  cursor: pointer;
+}
+
+.user-detail__list-item-title {
+  color: #0366d6;
+  margin-left: 10px;
+}
+
+.user-detail__list-item-title_normal{
+  font-weight: 400;
+}
+
+.user-detail__content{
+  display: flex;
+  flex-direction: row;
+}

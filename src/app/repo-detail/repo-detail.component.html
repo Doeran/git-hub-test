@@ -1,0 +1,23 @@
+<div class="repo-detail">
+  <h3 class="repo-detail__text">
+    <span class="repo-detail__text_normal" routerLink="/detail/{{repoData?.owner?.login}}" >{{repoData?.owner?.login}}</span>
+    /
+    {{repoData.name}}</h3>
+
+  <mat-list>
+    <h3 mat-subheader>Branch List</h3>
+    <mat-list-item *ngFor="let branch of branchesList">
+      <h4 mat-line>{{branch.name}}</h4>
+    </mat-list-item>
+  </mat-list>
+  <mat-divider></mat-divider>
+  <button mat-raised-button color="primary" (click)="showCommits()" class="repo-detail__button">Commits</button>
+  <!--<div *ngIf="commitsList.length>0">-->
+  <mat-list>
+    <h3 mat-subheader>Commit List</h3>
+    <mat-list-item *ngFor="let commit of commitsList">
+      <h4 mat-line>Commit Name: {{commit.commit.message}}</h4>
+    </mat-list-item>
+  </mat-list>
+  <!--</div>-->
+</div>
